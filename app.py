@@ -13,6 +13,6 @@ output_directory = st.text_input('出力先のフォルダを入力してくだ�
 
 button = st.button('ファイルをまとめます')
 if button:
-    with st.spinner('処理中です...'):
-        gather(parent_directory, output_directory)
-        st.write("処理が完了しました。" + output_directory + "に出力されました。")
+    st.spinner('処理中です...')
+    gather(parent_directory, output_directory)
+    st.write("処理が完了しました。" + output_directory + "に出力されました。")
